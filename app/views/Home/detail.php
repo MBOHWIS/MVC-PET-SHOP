@@ -11,6 +11,7 @@
                 <div class="modal-body mx-3">
                     <table>
                         <tr>
+                            
                             <th>name : </th>
                             <td><?= $item['name'] ?></td>
                         </tr>
