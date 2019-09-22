@@ -49,6 +49,14 @@ class HomeController extends Controller
         header("Location: ".BASE_URL);
     }
     public function Delete($name){
+        $modelUser = $this->model('pet')->all();
+        $data=$this->model('pet')->Find($name);
+        $this->view('Home/header');
+        $this->view('Home/Index', $modelUser);
+        $this->view('Home/delete',$data);
+        $this->view('Home/footer');
+    }
+    public function Deleted($name){
         $this->model('pet')->Delete($name);
         header("Location: ".BASE_URL);
     }

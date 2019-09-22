@@ -2,7 +2,7 @@
 <main>
     <!-- Default form register -->
 
-    <div class="container w-75 my-3">
+    <main class="container w-75 my-3">
         <div class=" h1 mb-5 mx-auto text-center">
             <h1 class="d-inline-block font-weight-bold text-dark border-danger" style="border-bottom:4px solid black;">PET SHOP</h1>
         </div>
@@ -29,6 +29,7 @@
                 <?php endforeach ?>
             </tbody>
         </table>
+        <!-- modal insert -->
         <div class="modal fade" id="insertmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -52,19 +53,19 @@
                                 <input type="text" id="form2" name="species" class="form-control validate mb-3">
                                 <label data-error="wrong" data-success="right" for="form2">species</label>
                             </div>
-                            <label data-error="wrong" data-success="right" for="form2"><small class="text-muted">sex</small></label>
-                            <div class="md-form mb-0">
+                            <label data-error="wrong" data-success="right" class="my-0" for="form2"><small class="text-muted my-0">sex</small></label>
+                            <div class="md-form mt-0">
                                 <select name="sex" id="sex" class="form-control mb-3">
                                     <option value="jantan">jantan</option>
                                     <option value="betina">betina</option>
                                 </select>
                             </div>
-                            <div class="md-form mb-0">
-                                <input type="date" id="form2" name="birth" class="form-control validate mb-3">
+                            <div class="md-form mt-3">
+                                <input type="date" id="form2" name="birth" class="form-control validate mb-3 pt-0">
                                 <label data-error="wrong" data-success="right" for="form2">birth</label>
                             </div>
-                            <div class="md-form mb-0">
-                                <input type="date" id="form2" name="death" class="form-control validate mb-3">
+                            <div class="md-form mt-3">
+                                <input type="date" id="form2" name="death" class="form-control validate mb-3 pt-0">
                                 <label data-error="wrong" data-success="right" for="form2">death</label>
                             </div>
                             <button class="btn btn-indigo btn-block">Submit</button>
@@ -73,14 +74,11 @@
                 </div>
             </div>
         </div>
-        <a class="dropdown-item" id="updateModal" href="<?= BASE_URL ?>Home/index" data-toggle="modal" data-target="#logoutModal">Logout</a>
-
-
-
-        <!-- Default form register -->
+        <!-- modal delete -->
+        
 </main>
 <!-- SCRIPTS -->
 <!-- JQuery -->
-</div>
+</main>
 
 <!-- Default form register -->
